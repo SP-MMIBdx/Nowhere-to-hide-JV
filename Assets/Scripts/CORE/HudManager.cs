@@ -11,10 +11,13 @@ public class HudManager : MonoBehaviour
 	
 	private int pv_max = 100;
 	private int pv = 100;
+	private int batterie = 100;
+	private int batterie_max = 100;
 	private Item item = Item.None;
 	
 	[SerializeField] private GameObject hud_item;
 	[SerializeField] private GameObject hud_pv;
+	[SerializeField] private GameObject hud_batterie;
 	[SerializeField] private GameObject hud_message;
 	[SerializeField] private GameObject panel_pause;
 	
@@ -37,12 +40,13 @@ public class HudManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(hud_item == null || hud_pv == null || hud_message == null){
+        if(hud_item == null || hud_pv == null || hud_message == null || hud_batterie == null){
 			Debug.Log("hud mal configuré");
 		}
 		
 		updateItem();
 		updatePV();
+		updateBatterie();
 		hud_message.SetActive(false);
 		
 		AudioManager am = AudioManager.instance;
@@ -98,12 +102,34 @@ public class HudManager : MonoBehaviour
 		pv = Mathf.Max(0, pv - val);
 		updatePV();
 	}
-	
+
+
 	//Pour modifier le nombre de PV sur l'HUD
 	public void updatePV(){
 		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
 	}
 	
+		//Pour ajouter des batteries
+	public void addBatterie(int val){
+		pv = Mathf.Min(batterie_max, batterie + val);
+		updateBatterie();
+	}
+
+		//Pour enlever des batteries
+	public void subBatterie(int val){
+		pv = Mathf.Max(0, batterie - val);
+		updateBatterie();
+	}
+	
+	//Pour modifier le nombre de PV sur l'HUD
+	public void updateBatterie (){
+		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + batterie.ToString());
+	}
+
+	public bool fullBatterie(){
+		return batterie == batterie_max;
+	}
+
 	//Pour savoir si on a un item
 	public bool hasItem(){
 		return item != Item.None;
