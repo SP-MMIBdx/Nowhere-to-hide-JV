@@ -107,6 +107,9 @@ public class HudManager : MonoBehaviour
 	public void updatePV(){
 		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
 	}
+		public bool fullBatterie(){
+		return batterie == batterie_max;
+	}
 	
 		//Pour ajouter des batteries
 	public void addBatterie(int val){
@@ -125,9 +128,7 @@ public class HudManager : MonoBehaviour
 		hud_pv.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
 	}
 
-	public bool fullBatterie(){
-		return batterie == batterie_max;
-	}
+
 
 	//Pour savoir si on a un item
 	public bool hasItem(){
