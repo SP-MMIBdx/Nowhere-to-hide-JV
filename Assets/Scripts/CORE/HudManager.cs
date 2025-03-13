@@ -107,7 +107,7 @@ public class HudManager : MonoBehaviour
 	public void updatePV(){
 		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
 	}
-		public bool fullBatterie(){
+	public bool fullBatterie(){
 		return batterie == batterie_max;
 	}
 	
