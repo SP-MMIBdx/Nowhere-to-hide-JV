@@ -11,8 +11,9 @@ public class HudManager : MonoBehaviour
 	
 	private int pv_max = 100;
 	private int pv = 100;
-	private int batterie = 100;
 	private int batterie_max = 100;
+	private int batterie = 100;
+
 	private Item item = Item.None;
 	
 	[SerializeField] private GameObject hud_item;
@@ -125,7 +126,7 @@ public class HudManager : MonoBehaviour
 	
 	//Pour modifier le nombre de batterie sur l'HUD
 	public void updateBatterie (){
-		hud_pv.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
+		hud_batterie.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
 	}
 
 
