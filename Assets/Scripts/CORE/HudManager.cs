@@ -103,7 +103,6 @@ public class HudManager : MonoBehaviour
 		updatePV();
 	}
 
-
 	//Pour modifier le nombre de PV sur l'HUD
 	public void updatePV(){
 		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
@@ -121,9 +120,9 @@ public class HudManager : MonoBehaviour
 		updateBatterie();
 	}
 	
-	//Pour modifier le nombre de PV sur l'HUD
+	//Pour modifier le nombre de batterie sur l'HUD
 	public void updateBatterie (){
-		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + batterie.ToString());
+		hud_pv.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
 	}
 
 	public bool fullBatterie(){
