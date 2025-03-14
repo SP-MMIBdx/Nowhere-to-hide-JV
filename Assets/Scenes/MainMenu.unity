@@ -2684,6 +2684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOptions: {fileID: 851092739}
   panelTutorial: {fileID: 207960365}
+  panelQuit: {fileID: 265448524}
+  panelStartgame: {fileID: 979111046}
 --- !u!1 &1182293459
 GameObject:
   m_ObjectHideFlags: 0

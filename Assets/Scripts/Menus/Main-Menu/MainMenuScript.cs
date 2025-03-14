@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
     public GameObject panelOptions;
     public GameObject panelTutorial;
+    public GameObject panelQuit;
+    public GameObject panelStartgame;
 
     void Start(){
         HideOptions();
@@ -28,21 +31,12 @@ public class MainMenuScript : MonoBehaviour
         panelTutorial.SetActive(false);
     }
 
-
-    public void PlayGame(){
-        Debug.Log("Play");
-    }
-
-    public void QuitGame(){
-        Debug.Log("Quit");
-    }
-
-    // Start is called before the first frame update
+	public void PlayGame(){
+		SceneManager.LoadScene("Level1");
     
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
+
+	public void QuitGame(){
+		Application.Quit();
+	}
 }
