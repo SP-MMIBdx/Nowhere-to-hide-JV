@@ -1227,8 +1227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelOptions: {fileID: 73234882}
-  panelMainmenu: {fileID: 0}
+  panelMainmenu: {fileID: 691858208}
   buttonQuit: {fileID: 642954847}
+  buttonQuitoptions: {fileID: 0}
 --- !u!1001 &234358435
 PrefabInstance:
   m_ObjectHideFlags: 0

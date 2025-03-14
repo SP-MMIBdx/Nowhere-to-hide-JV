@@ -8,6 +8,7 @@ public class PauseScript : MonoBehaviour
     public GameObject panelOptions; 
     public GameObject panelMainmenu;
     public GameObject buttonQuit;
+    public GameObject buttonQuitoptions;
 
     void Start (){
         HideOptions();
