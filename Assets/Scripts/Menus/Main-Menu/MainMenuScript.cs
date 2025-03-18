@@ -9,10 +9,14 @@ public class MainMenuScript : MonoBehaviour
     public GameObject panelTutorial;
     public GameObject panelQuit;
     public GameObject panelStartgame;
+    public GameObject panelCredits;
+    public GameObject panelRights;
 
     void Start(){
         HideOptions();
         HideTutorial();
+        HideRights();
+        HideCredits();
     }
 
     public void ShowOptions(){
@@ -31,6 +35,22 @@ public class MainMenuScript : MonoBehaviour
         panelTutorial.SetActive(false);
     }
 
+        public void ShowCredits(){
+        panelCredits.SetActive(true);
+    }
+
+    public void HideCredits(){
+        panelCredits.SetActive(false);
+    }
+
+        public void ShowRights(){
+        panelRights.SetActive(true);
+    }
+
+    public void HideRights(){
+        panelRights.SetActive(false);
+    }
+
 	public void PlayGame(){
 		SceneManager.LoadScene("Level1");
     
@@ -39,4 +59,6 @@ public class MainMenuScript : MonoBehaviour
 	public void QuitGame(){
 		Application.Quit();
 	}
+
+
 }

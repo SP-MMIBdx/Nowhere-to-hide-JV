@@ -1229,7 +1229,7 @@ MonoBehaviour:
   panelOptions: {fileID: 73234882}
   panelMainmenu: {fileID: 691858208}
   buttonQuit: {fileID: 642954847}
-  buttonQuitoptions: {fileID: 0}
+  buttonQuitoptions: {fileID: 1789108749}
 --- !u!1001 &234358435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19259,7 +19259,7 @@ GameObject:
   - component: {fileID: 1789108752}
   - component: {fileID: 1789108751}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button Quit Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19329,8 +19329,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
+      - m_Target: {fileID: 225859884}
+        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
         m_MethodName: HideOptions
         m_Mode: 1
         m_Arguments:
