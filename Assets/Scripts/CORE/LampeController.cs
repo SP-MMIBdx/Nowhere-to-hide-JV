@@ -7,6 +7,7 @@ public class LampeController : MonoBehaviour
 {
 public Light LampeLumiere;
 
+    
 /*   {
         if (Input.GetMouseButtonDown(0)) 
         {
