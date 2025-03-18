@@ -12,7 +12,7 @@ public class HudManager : MonoBehaviour
 	private int pv_max = 100;
 	private int pv = 100;
 	private int batterie_max = 100;
-	private int batterie = 100;
+	private int batterie = 10;
 
 	private Item item = Item.None;
 	

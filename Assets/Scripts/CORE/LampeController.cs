@@ -39,6 +39,7 @@ public class LampeController : MonoBehaviour
         
         if (hud.getBatterie() == 0 && isOn){
             isOn = false;
+            switchLight();
         }
 
         RaycastHit hit;
