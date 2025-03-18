@@ -9,8 +9,7 @@ public class NiveauSuivant : MonoBehaviour
 
     public void AllerAuNiveau()
     {
-        SceneManagement.LoadScene(NomDeScene);
-        
+        SceneManager.LoadScene(NomDeScene); 
     }
 
     void onTriggerEnter(Collider other)
