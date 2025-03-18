@@ -114,13 +114,13 @@ public class HudManager : MonoBehaviour
 	
 		//Pour ajouter des batteries
 	public void addBatterie(int val){
-		pv = Mathf.Min(batterie_max, batterie + val);
+		batterie = Mathf.Min(batterie_max, batterie + val);
 		updateBatterie();
 	}
 
 		//Pour enlever des batteries
 	public void subBatterie(int val){
-		pv = Mathf.Max(0, batterie - val);
+		batterie = Mathf.Max(0, batterie - val);
 		updateBatterie();
 	}
 	
