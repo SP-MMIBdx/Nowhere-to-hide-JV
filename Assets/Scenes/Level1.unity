@@ -4853,7 +4853,7 @@ MonoBehaviour:
     sfx_end: {fileID: 8300000, guid: f03c61b495c02974db883e1314a33ed7, type: 3}
     sfx_hit: {fileID: 8300000, guid: 6c3833a4fc83a4942968b726e4498a61, type: 3}
   music_list:
-    music1: {fileID: 8300000, guid: acb85974b62eb9b4eb3daa3648634e1e, type: 3}
+    music1: {fileID: 8300000, guid: 5582ffbe4f09b4f6ab462c95bb7ddf58, type: 3}
   musicSource: {fileID: 826176487}
   sfxSource: {fileID: 826176486}
 --- !u!82 &826176486
@@ -4866,11 +4866,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5582ffbe4f09b4f6ab462c95bb7ddf58, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4962,11 +4962,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5582ffbe4f09b4f6ab462c95bb7ddf58, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
