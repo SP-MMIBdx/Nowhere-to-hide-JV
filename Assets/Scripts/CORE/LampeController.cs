@@ -13,6 +13,27 @@ public Light LampeLumiere;
         {
             ToggleLampeLumiere();
         }
-*/   
+*/ 
+
+    void Start()
+    {
+        LampeLumiere = GetComponentInChildren<Light>();
+        LampeLumiere.intensity = (0);
+    }
+
+    void Update()
+    {
+
+                if (Input.GetMouseButtonDown(0)) 
+        {
+            LampeLumiere.intensity = (8);
+        }
+                if (Input.GetMouseButtonDown(1)) 
+        {
+            LampeLumiere.intensity = (0);
+        }
+
+    }
 }
+
 
