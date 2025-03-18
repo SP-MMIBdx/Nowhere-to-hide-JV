@@ -112,6 +112,9 @@ public class HudManager : MonoBehaviour
 		return batterie == batterie_max;
 	}
 	
+	public int getBatterie(){
+		return batterie;
+	}
 		//Pour ajouter des batteries
 	public void addBatterie(int val){
 		batterie = Mathf.Min(batterie_max, batterie + val);

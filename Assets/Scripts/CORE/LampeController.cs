@@ -38,7 +38,10 @@ private float timerCooldown = 0;
 			} else {
 				timerCooldown -= Time.deltaTime;
 			}
-			
+            
+            if (hud.getBatterie() == 0){
+                LampeLumiere.intensity = (0);
+            }
 		}
 }
 
