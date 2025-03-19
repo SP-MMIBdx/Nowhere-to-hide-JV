@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 97348914}
   - component: {fileID: 97348913}
   m_Layer: 5
-  m_Name: Bar1
+  m_Name: H.Bar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,7 +999,7 @@ GameObject:
   - component: {fileID: 196077723}
   - component: {fileID: 196077722}
   m_Layer: 5
-  m_Name: Bar9
+  m_Name: H.Bar9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 256965702}
   - component: {fileID: 256965701}
   m_Layer: 5
-  m_Name: Bar3
+  m_Name: H.Bar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1996,7 +1996,7 @@ GameObject:
   - component: {fileID: 356899437}
   - component: {fileID: 356899436}
   m_Layer: 5
-  m_Name: Bar6
+  m_Name: H.Bar6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3366,22 +3366,21 @@ MonoBehaviour:
   hud_message: {fileID: 639848281}
   panel_pause: {fileID: 225859880}
   healthSegments:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 97348913}
+  - {fileID: 880664907}
+  - {fileID: 256965701}
+  - {fileID: 1193736569}
+  - {fileID: 1633291124}
+  - {fileID: 356899436}
+  - {fileID: 1634024309}
+  - {fileID: 1970959372}
+  - {fileID: 196077722}
+  - {fileID: 907561374}
   batterySegments:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 923245923}
+  - {fileID: 1435321522}
+  - {fileID: 1511340235}
+  - {fileID: 963042152}
   delay_message: 3
   item_sprites:
   - {fileID: 21300000, guid: d14f9437584d97d49bf2abbc919094db, type: 3}
@@ -5928,7 +5927,7 @@ GameObject:
   - component: {fileID: 880664908}
   - component: {fileID: 880664907}
   m_Layer: 5
-  m_Name: Bar2
+  m_Name: H.Bar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6003,7 +6002,7 @@ GameObject:
   - component: {fileID: 907561375}
   - component: {fileID: 907561374}
   m_Layer: 5
-  m_Name: Bar10
+  m_Name: H.Bar10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6152,7 +6151,7 @@ GameObject:
   - component: {fileID: 923245924}
   - component: {fileID: 923245923}
   m_Layer: 5
-  m_Name: BatteryBar1
+  m_Name: B.Bar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6641,7 +6640,7 @@ GameObject:
   - component: {fileID: 963042153}
   - component: {fileID: 963042152}
   m_Layer: 5
-  m_Name: BatteryBar4
+  m_Name: B.Bar4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7886,7 +7885,7 @@ GameObject:
   - component: {fileID: 1193736570}
   - component: {fileID: 1193736569}
   m_Layer: 5
-  m_Name: Bar4
+  m_Name: H.Bar4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8871,7 +8870,7 @@ GameObject:
   - component: {fileID: 1435321523}
   - component: {fileID: 1435321522}
   m_Layer: 5
-  m_Name: BatteryBar2
+  m_Name: B.Bar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9387,7 +9386,7 @@ GameObject:
   - component: {fileID: 1511340236}
   - component: {fileID: 1511340235}
   m_Layer: 5
-  m_Name: BatteryBar3
+  m_Name: B.Bar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10011,7 +10010,7 @@ GameObject:
   - component: {fileID: 1633291125}
   - component: {fileID: 1633291124}
   m_Layer: 5
-  m_Name: Bar5
+  m_Name: H.Bar5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10086,7 +10085,7 @@ GameObject:
   - component: {fileID: 1634024310}
   - component: {fileID: 1634024309}
   m_Layer: 5
-  m_Name: Bar7
+  m_Name: H.Bar7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21709,7 +21708,7 @@ GameObject:
   - component: {fileID: 1970959373}
   - component: {fileID: 1970959372}
   m_Layer: 5
-  m_Name: Bar8
+  m_Name: H.Bar8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
