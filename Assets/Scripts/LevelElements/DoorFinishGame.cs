@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorFinishGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private GameObject doorfinish;
+	
+	private bool active = true;
+    //Si on touche son collider
+	void OnTriggerEnter(Collider col){
+    	if (col.gameObject.tag == "Player" && active){
+        	HudManager hud = HudManager.instance; //On récupère le hud
+			
+			//Si le joueur a la clé dans son inventaire
+			if(hud.gotItem(Item.ClassicKey)){
+				hud.deleteItem();
+				hud.showTimedMessage("Porte ouverte.");
+				Destroy(doorfinish);
+				active = false; //Evite de revenir dans le script une fois l'objet supprimé
+				AudioManager am = AudioManager.instance;
+				am.PlaySFX(am.sfx_list.sfx_lock);
+                SceneManager.LoadScene("MainMenu");
+			} else{
+				hud.showMessage("Vous n'avez pas la clé.");
+			}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    	}
+	}
+	
+	//Si on sort du collider
+	void OnTriggerExit(Collider col){
+		if (col.gameObject.tag == "Player" && active){
+			HudManager hud = HudManager.instance;
+			hud.eraseMessage();
+		}
+	}
 }
+
