@@ -107,8 +107,13 @@ public class HudManager : MonoBehaviour
 	}
 
 	//Pour modifier le nombre de PV sur l'HUD
+	//hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
 	public void updatePV(){
-		hud_pv.GetComponent<TMP_Text>().SetText("PV : " + pv.ToString());
+        int activeSegmentsPV = pv / 10;
+        for (int i = 0; i < healthSegments.Count; i++)
+        {
+            healthSegments[i].enabled = (i < activeSegmentsPV);
+        }
 	}
 
 	public bool fullBatterie(){
@@ -134,8 +139,6 @@ public class HudManager : MonoBehaviour
 	public void updateBatterie (){
 		hud_batterie.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
 	}
-
-
 
 	//Pour savoir si on a un item
 	public bool hasItem(){
