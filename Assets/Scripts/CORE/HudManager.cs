@@ -21,6 +21,8 @@ public class HudManager : MonoBehaviour
 	[SerializeField] private GameObject hud_batterie;
 	[SerializeField] private GameObject hud_message;
 	[SerializeField] private GameObject panel_pause;
+	[SerializeField] private List<Image> healthSegments;
+	[SerializeField] private List<Image> batterySegments;
 	
 	[SerializeField] private float delay_message = 3.0f; //Temps où le message reste à l'écran
 	private bool has_message = false;
