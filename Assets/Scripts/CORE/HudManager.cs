@@ -11,8 +11,8 @@ public class HudManager : MonoBehaviour
 	
 	private int pv_max = 100;
 	private int pv = 100;
-	private int batterie_max = 100;
-	private int batterie = 100;
+	private int batterie_max = 20;
+	private int batterie = 20;
 
 	private Item item = Item.None;
 	
@@ -136,8 +136,16 @@ public class HudManager : MonoBehaviour
 	}
 	
 	//Pour modifier le nombre de batterie sur l'HUD
-	public void updateBatterie (){
-		hud_batterie.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
+	//public void updateBatterie (){
+		//hud_batterie.GetComponent<TMP_Text>().SetText("Batterie : " + batterie.ToString());
+	//}
+
+	public void updateBatterie(){
+    int activeSegmentsBattery = batterie / 4;
+        for (int i = 0; i < batterySegments.Count; i++)
+        {
+            batterySegments[i].enabled = (i < activeSegmentsBattery);
+        }
 	}
 
 	//Pour savoir si on a un item
