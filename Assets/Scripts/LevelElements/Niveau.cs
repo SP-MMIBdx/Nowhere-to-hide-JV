@@ -15,6 +15,7 @@ public class NiveauSuivant : MonoBehaviour
     void onTriggerEnter(Collider other)
     {
         AllerAuNiveau();
+        Debug.Log("test");
     }
 
 }
