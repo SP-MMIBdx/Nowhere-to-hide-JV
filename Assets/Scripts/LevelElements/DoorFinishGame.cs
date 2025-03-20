@@ -16,7 +16,7 @@ public class DoorFinishGame : MonoBehaviour
 			//Si le joueur a la clé dans son inventaire
 			if(hud.gotItem(Item.ClassicKey)){
 				hud.deleteItem();
-				hud.showTimedMessage("Porte ouverte.");
+				hud.showTimedMessage("Escape!");
 				Destroy(doorfinish);
 				active = false; //Evite de revenir dans le script une fois l'objet supprimé
 				AudioManager am = AudioManager.instance;
