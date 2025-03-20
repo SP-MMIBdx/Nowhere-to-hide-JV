@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BatteryPickup : MonoBehaviour
 {
-    [SerializeField] private int batterie = 25;
+    [SerializeField] private int batterie = 10;
 	
 	private bool active = true;
     //Si on touche son collider
@@ -13,11 +13,13 @@ public class BatteryPickup : MonoBehaviour
     	if (col.gameObject.tag == "Player" && active && !hud.fullBatterie()){
 			//Redonne des PV au joueur
 			hud.addBatterie(batterie);
-			hud.showTimedMessage("Vous avez récupéré " + batterie + " Batterie.");
+			hud.showTimedMessage("Vous avez récupéré 1 Batterie.");
 			Destroy(this.gameObject);
 			active = false; //Evite de revenir dans le script une fois l'objet supprimé
 			AudioManager am = AudioManager.instance;
 			am.PlaySFX(am.sfx_list.sfx_heal);
-    	}
+    	} else{
+				hud.showTimedMessage("Already Full Battery");
+			}
 	}
 }

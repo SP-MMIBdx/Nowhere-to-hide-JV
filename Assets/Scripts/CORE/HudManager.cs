@@ -11,8 +11,8 @@ public class HudManager : MonoBehaviour
 	
 	private int pv_max = 100;
 	private int pv = 100;
-	private int batterie_max = 20;
-	private int batterie = 20;
+	private int batterie_max = 50;
+	private int batterie = 50;
 
 	private Item item = Item.None;
 	
@@ -56,6 +56,7 @@ public class HudManager : MonoBehaviour
 		am.PlayMusic(am.music_list.music1);
 		
 		panel_pause.SetActive(false);
+		
     }
 
     // Update is called once per frame
@@ -186,7 +187,7 @@ public class HudManager : MonoBehaviour
 			}
 		}
 	}
-	
+
 	//Afficher un message momentanément
 	public void showMessage(string message){
 		hud_message.SetActive(true);

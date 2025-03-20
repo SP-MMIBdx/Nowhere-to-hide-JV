@@ -16,7 +16,7 @@ public class DoorToLevel2 : MonoBehaviour
 			//Si le joueur a la clé dans son inventaire
 			if(hud.gotItem(Item.ClassicKey)){
 				hud.deleteItem();
-				hud.showTimedMessage("Porte ouverte.");
+				hud.showTimedMessage("Level 2.");
 				Destroy(doorlvl2);
 				active = false; //Evite de revenir dans le script une fois l'objet supprimé
 				AudioManager am = AudioManager.instance;
