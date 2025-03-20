@@ -8,18 +8,26 @@ public class Life : MonoBehaviour
 	
 	private bool active = true;
     //Si on touche son collider
-	void OnTriggerEnter(Collider col){
-		HudManager hud = HudManager.instance; //On récupère le hud
-    	if (col.gameObject.tag == "Player" && active && !hud.fullPV()){
-			//Redonne des PV au joueur
-			hud.addPV(pv);
-			hud.showTimedMessage("Vous avez récupéré " + pv + " PV.");
-			Destroy(this.gameObject);
-			active = false; //Evite de revenir dans le script une fois l'objet supprimé
-			AudioManager am = AudioManager.instance;
-			am.PlaySFX(am.sfx_list.sfx_heal);
-    	} else{
-				hud.showTimedMessage("Already Full Health");
-			}
-	}
+void OnTriggerEnter(Collider col)
+{
+    HudManager hud = HudManager.instance; // On récupère le HUD
+
+    if (col.gameObject.tag == "Player" && active)
+    {
+        if (!hud.fullPV())
+        {
+            // Redonne des PV au joueur
+            hud.addPV(pv);
+            hud.showTimedMessage("Vous avez récupéré " + pv + " PV.");
+            active = false; // Evite de revenir dans le script
+            AudioManager am = AudioManager.instance;
+            am.PlaySFX(am.sfx_list.sfx_heal);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            hud.showTimedMessage("Already Full Health");
+        }
+    }
+}
 }
