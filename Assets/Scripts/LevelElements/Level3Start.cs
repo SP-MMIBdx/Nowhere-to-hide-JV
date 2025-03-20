@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level1Start : MonoBehaviour
+public class Level3Start : MonoBehaviour
 {
     HudManager hud => HudManager.instance;
 
@@ -21,7 +21,7 @@ public class Level1Start : MonoBehaviour
 
     IEnumerator WaitOneFrame(){
         yield return null;
-        hud.showTimedMessage("Find keys to escape!");
+        hud.showTimedMessage("Level 3");
 
     }
 }
