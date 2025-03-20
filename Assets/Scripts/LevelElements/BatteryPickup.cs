@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BatteryPickup : MonoBehaviour
 {
-    [SerializeField] private int batterie = 4;
+    [SerializeField] private int batterie = 10;
 	
 	private bool active = true;
     //Si on touche son collider
@@ -18,6 +18,8 @@ public class BatteryPickup : MonoBehaviour
 			active = false; //Evite de revenir dans le script une fois l'objet supprimé
 			AudioManager am = AudioManager.instance;
 			am.PlaySFX(am.sfx_list.sfx_heal);
-    	}
+    	} else{
+				hud.showTimedMessage("Already Full Battery");
+			}
 	}
 }
