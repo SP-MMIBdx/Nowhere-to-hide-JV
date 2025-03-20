@@ -21,7 +21,7 @@ public class Level1Start : MonoBehaviour
 
     IEnumerator WaitOneFrame(){
         yield return null;
-        hud.showTimedMessage("Find keys to exit");
+        hud.showTimedMessage("Find keys to escape!");
 
     }
 }
