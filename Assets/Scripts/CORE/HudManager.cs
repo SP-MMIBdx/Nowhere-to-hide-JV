@@ -56,6 +56,7 @@ public class HudManager : MonoBehaviour
 		am.PlayMusic(am.music_list.music1);
 		
 		panel_pause.SetActive(false);
+		
     }
 
     // Update is called once per frame
@@ -186,7 +187,7 @@ public class HudManager : MonoBehaviour
 			}
 		}
 	}
-	
+
 	//Afficher un message momentanément
 	public void showMessage(string message){
 		hud_message.SetActive(true);
