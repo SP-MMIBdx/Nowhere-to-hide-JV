@@ -40,6 +40,8 @@ public class ToxicFog : MonoBehaviour
 		if (col.gameObject.tag == "Player"){
 			playerContact = false;
 			timerCooldown = 0;
+			AudioManager am = AudioManager.instance;
+			am.PlaySFX(am.sfx_list.sfx_growl);
 		}
 	}
 }
