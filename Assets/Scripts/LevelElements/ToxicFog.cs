@@ -15,9 +15,9 @@ public class ToxicFog : MonoBehaviour
 	
 	void Update(){
 		if(playerContact){
-			//On enlève 1 PV au joueur toutes les 0.1s
+			//On enlève 2 PV au joueur toutes les 0.1s
 			if(timerCooldown <= 0){
-				hud.subPV(1);
+				hud.subPV(2);
 				timerCooldown = cooldown;
 			} else {
 				timerCooldown -= Time.deltaTime;
