@@ -15332,7 +15332,8 @@ MonoBehaviour:
     sfx_lock: {fileID: 8300000, guid: 7987f201472a8c24f98b11882d58481a, type: 3}
     sfx_heal: {fileID: 8300000, guid: e1240997d03b41146bfd34bb91f72dff, type: 3}
     sfx_end: {fileID: 8300000, guid: f03c61b495c02974db883e1314a33ed7, type: 3}
-    sfx_hit: {fileID: 8300000, guid: 6c3833a4fc83a4942968b726e4498a61, type: 3}
+    sfx_hit: {fileID: 8300000, guid: 4887c9d1d91310c438494ee12f4f6982, type: 3}
+    sfx_growl: {fileID: 8300000, guid: b4237c94599e76c41b3f03a35c536ef5, type: 3}
   music_list:
     music1: {fileID: 8300000, guid: 5582ffbe4f09b4f6ab462c95bb7ddf58, type: 3}
   musicSource: {fileID: 826176487}
