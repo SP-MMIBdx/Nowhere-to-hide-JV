@@ -13,6 +13,7 @@ public class MainMenuScript : MonoBehaviour
     public GameObject panelRights;
 
     void Start(){
+
         HideOptions();
         HideTutorial();
         HideRights();
@@ -27,15 +28,16 @@ public class MainMenuScript : MonoBehaviour
         panelOptions.SetActive(false);
     }
 
-        public void ShowTutorial(){
+    public void ShowTutorial(){
         panelTutorial.SetActive(true);
     }
 
     public void HideTutorial(){
+        Debug.Log("hide");
         panelTutorial.SetActive(false);
     }
 
-        public void ShowCredits(){
+    public void ShowCredits(){
         panelCredits.SetActive(true);
     }
 
@@ -43,7 +45,7 @@ public class MainMenuScript : MonoBehaviour
         panelCredits.SetActive(false);
     }
 
-        public void ShowRights(){
+    public void ShowRights(){
         panelRights.SetActive(true);
     }
 
