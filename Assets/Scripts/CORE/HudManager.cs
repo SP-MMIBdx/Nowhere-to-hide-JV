@@ -142,10 +142,12 @@ public class HudManager : MonoBehaviour
 	//}
 
 	public void updateBatterie(){
-    int activeSegmentsBattery = batterie / 4;
+    	int activeSegmentsBattery = batterie_max / 4;
+
+		Debug.Log(batterie);
         for (int i = 0; i < batterySegments.Count; i++)
         {
-            batterySegments[i].enabled = (i < activeSegmentsBattery);
+            batterySegments[i].enabled = (batterie > i*activeSegmentsBattery);
         }
 	}
 
