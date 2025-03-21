@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 479498857443855848}
   - component: {fileID: 805966564958251097}
   - component: {fileID: 3395148463789797196}
+  - component: {fileID: 2094741450421057377}
   m_Layer: 0
   m_Name: Sphere de Soin
   m_TagString: Untagged
@@ -120,6 +121,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: 25
+--- !u!114 &2094741450421057377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7485895627176526169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55abcc9e07513d8488c9bbc2968d91c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReverse: 1
 --- !u!1 &7947585794755821020
 GameObject:
   m_ObjectHideFlags: 0

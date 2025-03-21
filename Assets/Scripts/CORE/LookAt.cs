@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
+	public bool isReverse = false;
 	private Transform player;
 	private Vector3 lastPlayerPosition;
 	private float rotationSpeed = 5f; // Ajustable
@@ -16,6 +17,9 @@ public class LookAt : MonoBehaviour
 	void Update(){
 		Vector3 targetPosition = getPlayerPosition();
 		Vector3 direction = targetPosition - transform.position;
+		if(isReverse){
+			direction *= -1;
+		}
 		if (direction != Vector3.zero && targetPosition != lastPlayerPosition) { 
 			lastPlayerPosition = targetPosition;
 			//transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
