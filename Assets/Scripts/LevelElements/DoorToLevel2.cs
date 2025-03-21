@@ -23,7 +23,7 @@ public class DoorToLevel2 : MonoBehaviour
 				am.PlaySFX(am.sfx_list.sfx_lock);
                 SceneManager.LoadScene("Level2");
 			} else{
-				hud.showMessage("Vous n'avez pas la clé.");
+				hud.showMessage("Vous n'avez pas le badge.");
 			}
 
     	}

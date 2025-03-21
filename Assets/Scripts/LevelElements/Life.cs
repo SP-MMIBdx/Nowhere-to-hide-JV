@@ -26,7 +26,7 @@ void OnTriggerEnter(Collider col)
         }
         else
         {
-            hud.showTimedMessage("Already Full Health");
+            hud.showTimedMessage("PV déja pleine");
         }
     }
 }

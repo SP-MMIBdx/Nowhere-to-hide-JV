@@ -26,7 +26,7 @@ public class BatteryPickup : MonoBehaviour
         }
         else
         {
-            hud.showTimedMessage("Already Full Battery");
+            hud.showTimedMessage("Votre batterie est déjà pleine");
         }
     }
 }

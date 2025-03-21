@@ -21,7 +21,7 @@ public class Level1Start : MonoBehaviour
 
     IEnumerator WaitOneFrame(){
         yield return null;
-        hud.showTimedMessage("Find keys to open doors and escape!");
+        hud.showTimedMessage("Trouvez les badges pour vous échapper!");
 
     }
 }
