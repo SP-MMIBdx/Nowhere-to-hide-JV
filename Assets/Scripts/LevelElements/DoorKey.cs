@@ -21,7 +21,7 @@ public class DoorKey : MonoBehaviour
 				AudioManager am = AudioManager.instance;
 				am.PlaySFX(am.sfx_list.sfx_lock);
 			} else{
-				hud.showMessage("Vous n'avez pas la clé.");
+				hud.showMessage("Vous n'avez pas le badge.");
 			}
 
     	}

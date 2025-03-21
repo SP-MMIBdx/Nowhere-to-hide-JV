@@ -23,7 +23,7 @@ public class DoorFinishGame : MonoBehaviour
 				am.PlaySFX(am.sfx_list.sfx_lock);
                 SceneManager.LoadScene("EndCinematic");
 			} else{
-				hud.showMessage("Vous n'avez pas la clé.");
+				hud.showMessage("Vous n'avez pas le badge.");
 			}
 
     	}

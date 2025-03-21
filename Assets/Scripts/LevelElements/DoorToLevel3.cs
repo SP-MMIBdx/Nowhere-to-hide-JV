@@ -24,7 +24,7 @@ public class DoorToLevel3 : MonoBehaviour
 				hud.showMessage("Level 3");
                 SceneManager.LoadScene("Level3");
 			} else{
-				hud.showMessage("Vous n'avez pas la clé.");
+				hud.showMessage("Vous n'avez pas le badge.");
 			}
 
     	}
