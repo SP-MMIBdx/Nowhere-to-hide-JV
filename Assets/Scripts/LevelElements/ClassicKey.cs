@@ -13,7 +13,7 @@ public class ClassicKey : MonoBehaviour
 			//Si le joueur n'a pas déjà un item
 			if(!hud.hasItem()){
 				hud.addItem(Item.ClassicKey);
-				hud.showTimedMessage("Clé obtenue");
+				hud.showTimedMessage("Badge obtenu");
 				Destroy(this.gameObject);
 				active = false; //Evite de revenir dans le script une fois l'objet supprimé
 				AudioManager am = AudioManager.instance;
